@@ -15,7 +15,7 @@ npm install -g zesty-next-sync
 To use zesty-next-sync, run the following command:
 
 ```
-zesty-next-sync [-ts]
+zestySync [-ts]
 ```
 
 ## Flags
