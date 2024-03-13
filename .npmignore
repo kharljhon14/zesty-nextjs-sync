@@ -1,0 +1,8 @@
+/src
+/node_modules
+
+.env
+.zesty
+.github
+tsconfig.json
+tsup.config.ts
