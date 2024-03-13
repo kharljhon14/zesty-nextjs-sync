@@ -1,6 +1,6 @@
 # Description
 
-zesty-next-sync is the CLI version of the @zesty-io/nextjs-sync package, enhanced and customized for specific needs. It provides seamless synchronization between Zesty.io content and Next.js applications.
+zesty-nextjs-sync is the CLI version of the @zesty-io/nextjs-sync package, enhanced and customized for specific needs. It provides seamless synchronization between Zesty.io content and Next.js applications.
 
 ## Installation
 
