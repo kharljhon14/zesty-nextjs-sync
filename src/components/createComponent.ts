@@ -86,7 +86,7 @@ export async function createComponent(
     */
    
    import React  from 'react';
-   import { ContentItem } from '@/types/types';
+   import { ContentItem } from './types';
    
    function ${model.gqlModelName}({ content }:{content: ContentItem}) {
        return (

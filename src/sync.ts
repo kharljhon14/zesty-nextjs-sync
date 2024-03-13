@@ -20,6 +20,7 @@ import { readZestyConfig } from './readZestyConfig.js';
 import { directory } from './components/directory.js';
 import { createFiles } from './components/createFiles.js';
 import { setEnvValue } from './env.js';
+import { createType } from './components/createType.js';
 
 export async function sync(isTyped = false) {
   const tasks = new Listr([
@@ -189,6 +190,8 @@ export async function sync(isTyped = false) {
         try {
           // Ensure views/zesty directy exists
           const dir = await directory();
+
+          if (isTyped) await createType(dir);
 
           // Fetch latest models data
           const res = await gql(ctx.previewDomain, ctx.previewPassword);
