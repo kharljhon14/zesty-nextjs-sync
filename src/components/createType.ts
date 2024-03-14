@@ -1,4 +1,4 @@
-import { writeFile } from 'fs/promises';
+import { stat, writeFile } from 'fs/promises';
 
 export async function createType(path: string) {
   const content = `export type Article = {
@@ -118,9 +118,12 @@ export async function createType(path: string) {
   `;
 
   try {
-    await writeFile(`${path}/types.ts`, content);
-  } catch (err) {
-    console.log(err);
-    process.exit();
+    await stat(`${path}/types.ts`);
+  } catch (err: any) {
+    if (err.code === 'ENOENT') {
+      await writeFile(`${path}/types.ts`, content);
+    } else {
+      process.exit();
+    }
   }
 }

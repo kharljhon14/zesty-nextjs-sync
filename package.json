@@ -1,6 +1,6 @@
 {
   "name": "zesty-nextjs-sync",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "zesty-nextjs-sync is the CLI version of the @zesty-io/nextjs-sync package, enhanced and customized for specific needs. It provides seamless synchronization between Zesty.io content and Next.js applications.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
